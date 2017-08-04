@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActuatorsActivity" >
+
+    <Button
+        android:id="@+id/vibrateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="vibrate" />
+
+    <SeekBar
+        android:id="@+id/vibrationTimeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vibrateButton"
+        android:layout_below="@+id/vibrationTimeText"
+        android:max="5000"
+        android:progress="1000" />
+
+    <TextView
+        android:id="@+id/vibrationTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vibrateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="time" />
+
+    <Button
+        android:id="@+id/playSoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/vibrationTimeSeekBar"
+        android:layout_alignRight="@+id/vibrationTimeSeekBar"
+        android:layout_below="@+id/vibrationTimeSeekBar"
+        android:layout_marginTop="33dp"
+        android:text="play sound" />
+
+</RelativeLayout>

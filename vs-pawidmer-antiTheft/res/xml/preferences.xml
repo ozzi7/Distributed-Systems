@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <CheckBoxPreference
+        android:key="pref_active"
+        android:title="Alarm active"
+        android:defaultValue="true" />
+
+    <EditTextPreference
+        android:key="pref_alarmTimeout"
+        android:title="Alarm timeout"
+        android:defaultValue="10"
+        android:inputType="number" />
+    
+    <EditTextPreference
+        android:key="pref_alarmSensibility"
+        android:title="Alarm sensibility"
+        android:defaultValue="10"
+        android:inputType="numberDecimal" />
+    	
+    
+    
+</PreferenceScreen>
